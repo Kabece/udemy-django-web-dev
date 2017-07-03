@@ -1,0 +1,38 @@
+body {
+  background-color: #011627;
+  border: 50px solid #2EC4B6;
+  border-top: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.text {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+#first {
+  margin-top: 10em;
+}
+
+#second {
+  margin-top: 5em;
+}
+
+input {
+  width: 20em;
+  height: 2em;
+}
+
+#submit {
+  color: black;
+  background-color: orange;
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 6em;
+  width: 12em;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
