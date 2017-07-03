@@ -1,0 +1,35 @@
+h1 {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+
+table {
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+  height: 500px;
+}
+
+td {
+  border: 6px solid white;
+}
+
+#first {
+  background: #29339B;
+}
+
+#second {
+  background: #74A4BC;
+}
+
+#third {
+  background: #B6D6CC;
+}
+
+#fourth {
+  background: #F1FEC6;
+}
+
+#fifth {
+  background: #FF3A20;
+}
