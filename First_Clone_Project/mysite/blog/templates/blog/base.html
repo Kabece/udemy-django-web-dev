@@ -19,14 +19,14 @@
   <body class="loader">
     <nav class="navbar navbar-default techfont custom-navbar">
       <div class="container">
-        <ul class="nav nabar-nav">
+        <ul class="nav navbar-nav">
           <li><a class="navbar-brand bigbrand" href="{% url 'post_list' %}">My blog</a></li>
-          <li><a href="{% url 'about' %}"></a></li>
-          <li><a href="https://www.github.com"></a></li>
-          <li><a href="https://www.linkedin.com"></a></li>
+          <li><a class="navbar-link" href="{% url 'about' %}">About</a></li>
+          <li><a class="navbar-link" href="https://www.github.com">GitHub</a></li>
+          <li><a class="navbar-link" href="https://www.linkedin.com">LinkedIn</a></li>
         </ul>
 
-        <ul class="nav nabar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
             <li>
               <a href="{% url 'post_new' %}">New Post</a>

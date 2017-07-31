@@ -3,9 +3,9 @@ from django.utils import timezone
 from blog.models import Post, Comment
 from blog.forms import PostForm, CommentForm
 from django.urls import reverse_lazy
-from django.contrib.decorators import login_required
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import (TemplateView, ListView
+from django.views.generic import (TemplateView, ListView,
                                     DetailView, CreateView,
                                     UpdateView, DeleteView)
 # Create your views here.
@@ -59,9 +59,9 @@ def add_comment_to_post(request, pk):
             comment.post = post
             comment.save()
             return redirect('post_detail', pk = post.pk)
-        else:
-            form = CommentForm
-        return render(request, 'blog/comment_form.html', {'form':form})
+    else:
+        form = CommentForm()
+    return render(request, 'blog/comment_form.html', {'form':form})
 
 @login_required
 def comment_approve(request, pk):
